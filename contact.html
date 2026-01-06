@@ -14,64 +14,130 @@
     <a href="index.html" class="logo-link">
       <img src="images/logo-mjc.png" alt="Logo MJC de L'Arbresle">
     </a>
-    <h1>MJC de L'Arbresle</h1>
+    <h1>MJC - Centre social de L'Arbresle</h1>
+  </div>
+
+  <div class="espace-famille">
+    <a href="https://espacefamille.aiga.fr/index.html?dossier=11696244#connexion&011339" class="famille-link">
+      <img src="images/logo-famille.png" alt="Espace Famille">
+      <span>Espace Famille</span>
+    </a>
   </div>
 
   <nav>
     <ul>
       <li><a href="index.html">Accueil</a></li>
-      <li><a href="la-mjc.html">La MJC</a></li>
-      <li><a href="activites.html">Activités</a></li>
-      <li><a href="https://espacefamille.aiga.fr/index.html?dossier=11696244#connexion&011339">Espace Familles</a></li>
-      <li><a href="secteur.html">Secteurs</a></li>
+      <li><a href="la-mjc.html">Votre MJC</a></li>
+      <li><a href="actualite.html">Actualités</a></li>
+      <li><a href="activites.html">Activités Régulières</a></li>
+      <li><a href="secteur.html">Enfance & Jeunesse</a></li>
+      <li><a href="famille.html">Famille</a></li>
       <li><a href="contact.html" class="active">Contact</a></li>
     </ul>
   </nav>
-
-  <div class="header-partners">
-    <img src="images/logo-caf.png" alt="Partenaire 1">
-    <img src="images/logo-commune.png" alt="Partenaire 2">
-    <img src="images/logo-sgn.png" alt="Partenaire 3">
-    <img src="images/logo-ufolep.png" alt="Partenaire 4">
-  </div>
 </header>
 
+<section class="section-container formulaire">
+  <div>
+  <h2 class="section-title">Envoyer un message</h2>
 
-<!-- SECTION : Contact -->
-<section class="section-container">
-  <h2 class="section-title">Contact</h2>
+  <form action="https://formsubmit.co/contact@mjc-larbresle.fr" method="POST" class="contact-form">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://ton-site.fr/message-envoye.html">
 
-  <div class="grid-3">
+    <div class="form-row-2">
+      <div class="field">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" required>
+      </div>
 
-    <div class="card-generic bleu">
-      <h3>Adresse</h3>
-      <p>MJC de L'Arbresle</p>
-      <p>4 Rue du Dr MichelC</p>
-      <p>69210 L'Arbresle</p>
+      <div class="field">
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+      </div>
     </div>
 
-    <div class="card-generic orange">
-      <h3>Horaires</h3>
-      <p>Mardi : 14h00 – 18h00</p>
-      <p>Mercredi : 10h00 – 12h00, 14h00 – 18h15</p>
-      <p>Jeudi : 14h00 – 18h00</p>
-      <p>Lundi : 14h00 – 18h00</p>
-      <p>Vendredi : Fermé</p>
-      <p>Samedi : Fermé</p>
-      <p>Dimanche : Fermé</p>
+    <div class="field">
+      <label for="subject">Objet :</label>
+      <input type="text" id="subject" name="subject" required>
     </div>
 
-    <div class="card-generic vert">
-      <h3>Contact</h3>
-      <p><a href="tel:0474011591">04 74 01 15 91</a></p>
-      <p><a href="mailto:contact@mjc-larbresle.fr">contact@mjc-larbresle.fr</a></p>
+    <div class="field">
+      <label for="message">Message :</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
     </div>
+
+    <button type="submit" class="btn">Envoyer</button>
+  </form>
 
   </div>
 </section>
 
 <footer>
   <p>© 2025 MJC de L'Arbresle — Tous droits réservés</p>
+  <p>Nos partenaires nous soutiennent</p>
+
+  <div class="footer-logos">
+    <a href="https://www.caf.fr/allocataires/caf-du-rhone"><img src="images/logo-caf.png" alt="Partenaire caf"></a>
+    <a href="https://www.paysdelarbresle.fr/"><img src="images/logo-commune.png" alt="Partenaire commune"></a>
+    <a href="https://saint-germain-nuelles.fr"><img src="images/logo-sgn.png" alt="Partenaire sgn"></a>
+    <a href="https://www.ufolep.org/"><img src="images/logo-ufolep.png" alt="Partenaire ufolep"></a>
+  </div>
+
+  <div class="footer-links">
+
+    <div class="footer-column">
+      <h4>Aide & Contact</h4>
+      <ul>
+        <li><a href="#">Questions fréquentes</a></li>
+        <li><a href="mailto:contact@mjc-larbresle.fr">Formulaire de contact</a></li>
+        <li><a href="#">Téléphone</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Documents à télécharger</h4>
+      <ul>
+        <li><a href="#">Plaquette annuelle</a></li>
+        <li><a href="#">Fiche adhésion</a></li>
+        <li><a href="#">Calendrier des activités</a></li>
+        <li><a href="#">Tarifs</a></li>
+        <li><a href="#">Règlement intérieur</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>À propos de nous</h4>
+      <ul>
+        <li><a href="#">Actualités</a></li>
+        <li><a href="#">Recrutement</a></li>
+        <li><a href="#">Espace presse</a></li>
+        <li><a href="#">Devenir partenaire</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Sites partenaires</h4>
+      <ul>
+        <li><a href="https://www.mfr-lapalma.fr/">MFR La Palma</a></li>
+        <li><a href="https://www.caf.fr/allocataires/caf-du-rhone">CAF</a></li>
+        <li><a href="https://www.mairie-larbresle.fr/">Mairie de L'Arbresle</a></li>
+        <li><a href="https://bully.fr/">Bully</a></li>
+        <li><a href="https://saint-germain-nuelles.fr/">St-Germain-Nuelles</a></li>
+        <li><a href="https://www.r2as.org/">R2AS</a></li>
+        <li><a href="https://www.ufolep.org/">Ufolep</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Nos réseaux sociaux</h4>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram"></a>
+      </div>
+    </div>
+
+  </div>
 </footer>
 
 </body>
